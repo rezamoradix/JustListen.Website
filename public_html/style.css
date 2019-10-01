@@ -1,0 +1,206 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    color: #fff;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+    
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient( #1113ad, #191b8f);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    opacity: 0.9;
+}
+.fa {
+    width: 35px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.a-title {
+    font-size: 50px;
+    text-align: left;
+}
+
+.a-artist {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.a-desc {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.np {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.audio-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.control {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.iloader {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    z-index: 99;
+    border-radius: 500px;
+    animation: looper 0.7s infinite linear;
+    vertical-align: middle;
+}
+
+.status {
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-info {
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px 15px;
+}
+
+.img-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.img-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.donate {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.allowd {
+    position: fixed;
+    width: 250px;
+    padding: 10px 15px;
+    bottom: 50px;
+    z-index: 999;
+    left: 50%;
+    margin-left: -125px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.allowd .msg {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    margin: 0 10px;
+}
+
+.allowbtn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    background: #1128ad;
+    color: #fff;
+    font-size: 300;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.allowbtn:hover{
+    background: #081a80;
+}
+
+
+.android-link {
+    overflow: hidden;
+    position: fixed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    top: 18px;
+    right: 18px;
+    opacity: 1;
+    display: block;
+}
+
+.android-link:hover {
+    opacity: 0.9;
+}
+
+.android-link i{
+    color: #94d82d;
+    padding: 5px 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 27px;
+}
+
+.android-link span{
+    background: #eee;
+    color: #94d82d;
+    padding: 5px 7px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 12px;
+
+}
+
+@keyframes looper {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
